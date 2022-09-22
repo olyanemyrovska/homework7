@@ -17,14 +17,14 @@ public class SumAverageTest {
     return new Object[][]{
         {1, 100, 5050},
         {-100, 100, 0},
-        {1, 1, 1}
+        {1, 1, 1},
+        {5, 10, 45},
         // TODO add 2 more test data here
     };
   }
 
   /**
    * Test data for lower and upper bounds.
-   *
    * @return test data array
    */
   @DataProvider(name = "Average")
@@ -32,7 +32,8 @@ public class SumAverageTest {
     return new Object[][]{
         {1, 100, 50.5},
         {-100, 100, 0.0},
-        {1, 1, 1.0}
+        {1, 1, 1.0},
+        {700, 100, 400.0}
         // TODO add 2 more test data here
     };
   }
